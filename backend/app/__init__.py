@@ -1,1 +1,0 @@
-# OpalAI Agentic Manufacturing System
