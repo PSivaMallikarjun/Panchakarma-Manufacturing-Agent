@@ -63,6 +63,7 @@ panchakarma-agent/
 └── samples/
     ├── cnc-gcode/
     └── design-specs/
+```
 <img width="1911" height="901" alt="Screenshot 2026-02-13 235046" src="https://github.com/user-attachments/assets/f0e29b15-d0c0-4b2b-8cff-b1715e4d5260" />
 <img width="1379" height="967" alt="Screenshot 2026-02-14 000952" src="https://github.com/user-attachments/assets/57186389-2efb-4f0c-989c-914d69a22346" />
 <img width="563" height="751" alt="Screenshot 2026-02-14 001552" src="https://github.com/user-attachments/assets/0c527eb3-7348-4749-af75-4fd82bb17ebb" />
