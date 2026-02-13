@@ -1,0 +1,36 @@
+.app {
+  min-height: 100vh;
+  background: var(--bg);
+}
+
+.app-tabs {
+  display: flex;
+  gap: 0.25rem;
+  padding: 0.5rem 1rem;
+  background: var(--bg-header);
+  border-bottom: 1px solid var(--border);
+}
+
+.app-tab {
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  color: var(--textMuted);
+  background: transparent;
+  border: none;
+  border-radius: 6px;
+}
+
+.app-tab:hover {
+  color: var(--text);
+}
+
+.app-tab.active {
+  background: var(--accent);
+  color: var(--bg-header);
+}
+
+.app-placeholder {
+  padding: 2rem;
+  color: var(--textMuted);
+  text-align: center;
+}

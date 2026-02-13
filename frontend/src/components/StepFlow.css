@@ -1,0 +1,196 @@
+.step-flow {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg);
+}
+
+.step-flow-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  background: var(--bg-header);
+  border-bottom: 1px solid var(--border);
+}
+
+.step-flow-dashboard-link {
+  background: none;
+  border: none;
+  color: var(--accent);
+  font-size: 0.8rem;
+  padding: 0.5rem;
+}
+
+.step-flow-dashboard-link:hover {
+  text-decoration: underline;
+}
+
+.step-flow-progress {
+  flex: 1;
+  max-width: 240px;
+  margin: 0 1rem;
+}
+
+.step-flow-progress-track {
+  height: 6px;
+  background: var(--surface2);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.step-flow-progress-fill {
+  height: 100%;
+  background: var(--accent);
+  border-radius: 3px;
+  transition: width 0.3s ease;
+}
+
+.step-flow-main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.step-prompt {
+  color: var(--accentBright);
+  font-size: 1.1rem;
+  text-align: center;
+  max-width: 420px;
+}
+
+.step-thinking {
+  text-align: center;
+}
+
+.step-thinking-blob {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 1rem;
+  background: var(--accent);
+  opacity: 0.4;
+  border-radius: 50%;
+  filter: blur(20px);
+  animation: blob-pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes blob-pulse {
+  0%, 100% { transform: scale(1); opacity: 0.4; }
+  50% { transform: scale(1.1); opacity: 0.6; }
+}
+
+.step-thinking-title {
+  color: var(--text);
+  font-size: 1.25rem;
+  margin: 0 0 0.5rem 0;
+}
+
+.step-thinking-progress {
+  color: var(--textMuted);
+  font-size: 0.9rem;
+  text-align: left;
+  max-width: 360px;
+  margin: 0 auto;
+}
+
+.step-flow-input-wrap {
+  padding: 1rem 1rem 1.5rem;
+  background: var(--bg);
+  border-top: 1px solid var(--border);
+}
+
+.step-flow-input-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 0.5rem 1rem;
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  border-radius: 24px;
+}
+
+.step-flow-input-bar:focus-within {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 2px rgba(94, 179, 214, 0.2);
+}
+
+.step-flow-attach {
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--textMuted);
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.step-flow-attach:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.step-flow-input {
+  flex: 1;
+  min-width: 0;
+  padding: 0.5rem 0;
+  background: transparent;
+  border: none;
+  color: var(--text);
+  font-size: 0.95rem;
+}
+
+.step-flow-input::placeholder {
+  color: var(--textMuted);
+}
+
+.step-flow-input:focus {
+  outline: none;
+}
+
+.step-flow-mic {
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: transparent;
+  border: none;
+  color: var(--textMuted);
+  font-size: 1rem;
+}
+
+.step-flow-mic:hover {
+  color: var(--accent);
+}
+
+.step-flow-send {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--accent);
+  border: none;
+  color: var(--bg-header);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+}
+
+.step-flow-send:hover {
+  background: var(--accentBright);
+}
+
+.step-flow-disclaimer {
+  text-align: center;
+  color: var(--textMuted);
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+}
